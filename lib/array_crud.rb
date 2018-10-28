@@ -1,36 +1,35 @@
 def create_an_empty_array
-  return []
+  []
 end
 
 def create_an_array
-  return [1, 2, 3, 4]
+  [1,2,3,4]
 end
 
-def add_element_to_end_of_array(array, element)
-  array << element
-  return array
+def add_element_to_end_of_array(arr,ele)
+  arr << ele
 end
 
-def add_element_to_start_of_array(array, element)
-  return array.unshift(element)
+def add_element_to_start_of_array(arr,ele)
+  arr.unshift(ele)
 end
 
-def remove_element_from_end_of_array(array)
-  return array.pop
+def remove_element_from_end_of_array(arr)
+  arr.pop #removes specifically the last element
 end
 
-def remove_element_from_start_of_array(array)
-  return array.shift
+def remove_element_from_start_of_array(arr)
+  arr.shift #removes specifically the first element
 end
 
-def retrieve_element_from_index(array, index_number)
-  return array[index_number]
+def retrieve_element_from_index(arr,idx)
+  return arr[idx]
 end
 
-def retrieve_first_element_from_array(array)
-  return array[0]
+def retrieve_first_element_from_array(arr)
+  return arr[0]  
 end
 
-def retrieve_last_element_from_array(array)
-  return array[-1]
+def retrieve_last_element_from_array(arr)
+  return arr[-1]
 end
